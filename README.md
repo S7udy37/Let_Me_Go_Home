@@ -1,4 +1,11 @@
 # Let_Me_Go_Home
+  
+2020-02-04 ~ 2020-02-10
+1. 15665 N과 M(11) https://www.acmicpc.net/problem/15665
+2. 13458 시험 감독 https://www.acmicpc.net/problem/13458
+3. 2447 별찍기-10 https://www.acmicpc.net/problem/2447
+4. 해밀턴 순환회로 http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=954&sca=3030
+5. 2752 개미 http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2015&sca=3080
 
 2020-01-31 ~ 2020-02-03 
 1. 1809 탑 http://jungol.co.kr/bbs/board.php?bo_table=pbank&sca=3020
