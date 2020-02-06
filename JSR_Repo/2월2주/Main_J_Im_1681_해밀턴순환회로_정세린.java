@@ -32,7 +32,7 @@ public class Main_J_Im_1681_해밀턴순환회로_정세린 {
 	private static void dfs(int v, int sum, int index) {
 
 		if (index == N - 1) {
-			// 집으로 돌아가는 길
+			// 회사로 돌아가는 길
 			if (matrix[v][0] == 0)
 				return;
 			min = (sum + matrix[v][0] < min) ? sum + matrix[v][0] : min;
