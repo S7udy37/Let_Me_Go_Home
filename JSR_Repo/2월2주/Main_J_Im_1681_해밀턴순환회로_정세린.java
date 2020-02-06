@@ -29,9 +29,9 @@ public class Main_J_Im_1681_해밀턴순환회로_정세린 {
 		System.out.println(min);
 	}
 
-	private static void dfs(int v, int sum, int index) {
+	private static void dfs(int v, int sum, int edge) {
 		visited[v] = true;
-		if (index == N - 1) {
+		if (edge == N - 1) {
 			// 회사로 돌아가는 길
 			if (matrix[v][0] == 0)
 				return;
@@ -41,7 +41,7 @@ public class Main_J_Im_1681_해밀턴순환회로_정세린 {
 
 		for (int i = 1; i < N; i++) {
 			if (visited[i] == false && matrix[v][i] != 0) {
-				dfs(i, sum + matrix[v][i], index + 1);
+				dfs(i, sum + matrix[v][i], edge + 1);
 				visited[i] = false;
 			}
 		}
