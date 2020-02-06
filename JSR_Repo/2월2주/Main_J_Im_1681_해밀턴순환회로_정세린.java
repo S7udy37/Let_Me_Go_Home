@@ -30,7 +30,7 @@ public class Main_J_Im_1681_해밀턴순환회로_정세린 {
 	}
 
 	private static void dfs(int v, int sum, int index) {
-
+		visited[v] = true;
 		if (index == N - 1) {
 			// 회사로 돌아가는 길
 			if (matrix[v][0] == 0)
@@ -38,13 +38,13 @@ public class Main_J_Im_1681_해밀턴순환회로_정세린 {
 			min = (sum + matrix[v][0] < min) ? sum + matrix[v][0] : min;
 			return;
 		}
+
 		for (int i = 1; i < N; i++) {
 			if (visited[i] == false && matrix[v][i] != 0) {
-				visited[i] = true;
 				dfs(i, sum + matrix[v][i], index + 1);
 				visited[i] = false;
 			}
 		}
-
 	}
+
 }
