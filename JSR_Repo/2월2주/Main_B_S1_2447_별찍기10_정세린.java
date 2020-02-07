@@ -28,7 +28,7 @@ public class Main_B_S1_2447_별찍기10_정세린 {
 			return (i >= n && i < n * 2 && j >= n && j < n * 2);
 
 		return (i % (n * 3) >= n && i % (n * 3) < n * 2 && j % (n * 3) >= n && j % (n * 3) < n * 2)
-				| blank(i, j, n * 3);
+				|| blank(i, j, n * 3);
 	}
 
 }
