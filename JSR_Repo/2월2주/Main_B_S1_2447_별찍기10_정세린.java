@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main_B_S1_2447_별찍기10_정세린 {
-	static int blank_num;
 	static int N;
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
