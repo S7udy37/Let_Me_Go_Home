@@ -2,7 +2,7 @@
   
 import java.util.Scanner;
   
-public class Main_JUNGOL_2752_개미_박진_TLE_95 {
+public class Main_J_2752_개미_박진_TLE_95 {
   
     static int w, h;
     static int p, q;
