@@ -1,8 +1,5 @@
-/*
- * 13524KB
- * 80ms
- */
-
+/*13524KB
+ * 80ms*/
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -46,7 +43,7 @@ public class Main_B_G5_17471_게리맨더링_정세린 {
 			}
 		}
 
-		L: for (int i = 1; i < (1 << N); i++) {
+		L: for (int i = 1; i < (1 << (N - 1)); i++) {
 			
 			// 새로 조합 만들면 visited, subsum초기화
 			subsum = 0;
