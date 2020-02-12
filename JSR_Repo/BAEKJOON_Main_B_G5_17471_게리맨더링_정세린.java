@@ -1,4 +1,4 @@
-/*13524KB
+/*13216KB
  * 80ms*/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,7 +18,7 @@ public class Main_B_G5_17471_게리맨더링_정세린 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
-		int diff, min, subsum = 0, subsum2;
+		int diff, min, subsum0 = 0, subsum1;
 		N = Integer.parseInt(br.readLine());
 		adj = new boolean[N + 1][N + 1];
 		num = new int[N + 1];
@@ -46,7 +46,7 @@ public class Main_B_G5_17471_게리맨더링_정세린 {
 		L: for (int i = 1; i < (1 << (N - 1)); i++) {
 			
 			// 새로 조합 만들면 visited, subsum초기화
-			subsum = 0;
+			subsum0 = 0;
 			Arrays.fill(visited, false);
 
 			for (int r = 1; r < N + 1; r++) {
@@ -69,13 +69,13 @@ public class Main_B_G5_17471_게리맨더링_정세린 {
 			// 구역 나누기 성공하면 각 구역합 구함
 			for (int k = 1; k < N + 1; k++) {
 				if (region[k] == 0) {
-					subsum += num[k];
+					subsum0 += num[k];
 				}
 			}
-			subsum2 = total - subsum;
+			subsum1 = total - subsum0;
 
 			// 구역 차이 구함
-			diff = Math.abs(subsum - subsum2);
+			diff = Math.abs(subsum0 - subsum1);
 			min = Math.min(min, diff);
 
 		}
