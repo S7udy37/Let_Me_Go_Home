@@ -1,5 +1,13 @@
 # Let_Me_Go_Home
-  
+
+2020-02-12 ~ 2020-02-17
+1. 10993 별찍기18 https://www.acmicpc.net/problem/10993
+2. 2589 보물섬 https://www.acmicpc.net/problem/2589
+3. 7785 회사에있는사람 https://www.acmicpc.net/problem/7785
+4. 1249 보급로 https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15QRX6APsCFAYD&categoryId=AV15QRX6APsCFAYD&categoryType=CODE&&&
+5. 1212 회문1 https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14QpAaAAwCFAYi&categoryId=AV14QpAaAAwCFAYi&categoryType=CODE
+
+
 2020-02-04 ~ 2020-02-10
 1. 15665 N과 M(11) https://www.acmicpc.net/problem/15665
 2. 13458 시험 감독 https://www.acmicpc.net/problem/13458
