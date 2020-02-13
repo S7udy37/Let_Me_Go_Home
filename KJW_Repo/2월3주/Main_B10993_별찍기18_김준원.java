@@ -1,5 +1,8 @@
-package S7udy;
-
+/**
+* 메모리 : 28700kb
+* 속도 : 176ms
+* 코드수 : 2636
+*/
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
