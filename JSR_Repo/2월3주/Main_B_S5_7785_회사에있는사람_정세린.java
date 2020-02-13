@@ -22,7 +22,7 @@ public class Main_B_S5_7785_회사에있는사람_정세린 {
 			if (str.endsWith("leave")) map.remove(name, name);
 		}
 
-		ArrayList<String> company = new ArrayList<String>(map.values());
+		ArrayList<String> company = new ArrayList<String>(map.keySet());
 		Collections.sort(company, new Comparator<String>() {
 			@Override
 			public int compare(String o1, String o2) {
@@ -32,7 +32,7 @@ public class Main_B_S5_7785_회사에있는사람_정세린 {
 
 		for (int i = 0; i < company.size(); i++)
 			sb.append(company.get(i)).append('\n');
-		
+
 		System.out.println(sb);
 	}
 
