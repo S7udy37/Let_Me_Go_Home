@@ -1,6 +1,5 @@
 /**
-  시간초과ㅠ
-
+* 시간초과ㅠ
 */
 
 import java.io.BufferedReader;
