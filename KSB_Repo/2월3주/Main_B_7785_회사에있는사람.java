@@ -1,7 +1,7 @@
-/*
-using hashSet
-53372 KB	
-572 ms
+/**
+* using hashSet
+* 53372 KB	
+* 572 ms
 */
 
 import java.io.BufferedReader;
