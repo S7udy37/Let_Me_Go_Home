@@ -1,5 +1,10 @@
 // Silver V - 7785 : 회사에 있는 사람
 
+/*
+48896KB
+504ms
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
