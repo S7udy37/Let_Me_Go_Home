@@ -1,3 +1,8 @@
+/**
+* 23,684 KB
+* 105 ms
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
