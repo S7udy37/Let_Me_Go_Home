@@ -1,8 +1,8 @@
 // Silver V - 7785 : 회사에 있는 사람
 
 /*
-48896KB
-504ms
+48896 kb
+504 ms
 */
 
 import java.io.BufferedReader;
