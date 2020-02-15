@@ -1,7 +1,5 @@
-// Memory : 149152
-// Time : 352ms
-
-package com.acmicpc;
+// Memory : 148888KB
+// Time : 328ms
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,13 +8,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_B2589_보물섬_오인호 {
+public class Main {
 
 	static char[][] map = new char[50][50];
-	static int[][] des = new int[50][50];
 	static boolean[][] temp;
 	static int N, M;
-	
+	static int ans;
 	static int[] dx = { 1, -1, 0, 0};
 	static int[] dy = { 0, 0, 1, -1}; 
 	
@@ -35,21 +32,14 @@ public class Main_B2589_보물섬_오인호 {
 		}
 		for(int i=0; i<N; i++) {
 			for(int j=0; j<M; j++) {
-				if(map[i][j] == 'L' && des[i][j] == 0)
+				if(map[i][j] == 'L')
 					go(i,j);
-			}
-		}
-		int ans = 0;
-		for(int i =0; i<N; i++) {
-			for(int j=0; j<M; j++) {
-				if(ans < des[i][j]) ans = des[i][j];
 			}
 		}
 		System.out.println(ans);
 	}
 
 	private static void go(int x, int y) {
-		int ans = 0;
 		temp = new boolean[N][M];
 		Queue<Point> q = new LinkedList<Point>();
 		q.add(new Point(x,y,0));
@@ -69,7 +59,6 @@ public class Main_B2589_보물섬_오인호 {
 			}
 			if(ans < cnt) ans = cnt;
 		}
-		des[x][y] = ans;
 	}
 
 }
