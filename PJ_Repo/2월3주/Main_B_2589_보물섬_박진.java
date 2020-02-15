@@ -1,5 +1,10 @@
 // Gold V - 2589 : 보물섬
 
+/*
+48,896KB
+504ms
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
