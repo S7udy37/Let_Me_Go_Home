@@ -1,3 +1,9 @@
+/**
+* 13424 KB
+* 88 ms
+*
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -25,8 +31,8 @@ public class Main_B_1697_숨바꼭질 {
 			}			
 			
 			if(i==N) {
-				dp[i] = 0; 
-        continue;
+				dp[i] = 0;
+				continue;
 			}
 			
 			if(i%2==0) {
