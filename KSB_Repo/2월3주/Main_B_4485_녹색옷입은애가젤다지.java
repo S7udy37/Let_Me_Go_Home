@@ -1,3 +1,8 @@
+/**
+* 18480 KB
+* 176 ms
+*/
+
 package study_0215;
 
 import java.io.BufferedReader;
