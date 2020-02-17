@@ -1,9 +1,12 @@
 /**
+*
+* 21612	KB
+* 160 ms
+*
 * 숨바꼭질1은 되는데 왜 이건 안될까..ㅠㅠ
-* 반례: 3 39
+* 반례: 3 39 => token으로 해결
+*
 */
-
-package study_0215;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -47,16 +50,19 @@ public class Main_B_13913_숨바꼭질4 {
 					continue;
 				}
 				
+				boolean token=false;
 				if(i%2==0) {
 					a = dp[i/2][0] + 1;
 					a_idx = i/2;
 				}else {
 					if(dp[(i-1)/2][0] < dp[(i+1)/2][0]) {
 						a = dp[(i-1)/2][0] + 2;
-						a_idx = (i-1)/2;
+						a_idx = (i-1);
+						token=true;
 					}else {
 						a = dp[(i+1)/2][0] + 2;
-						a_idx = (i+1)/2;
+						a_idx = (i+1);
+						token=true;
 					}
 				}
 				
@@ -66,6 +72,7 @@ public class Main_B_13913_숨바꼭질4 {
 				if(a<b) {
 					dp[i][0] = a;
 					dp[i][1] = a_idx;
+					if(token) dp[a_idx][1] = a_idx/2;
 				}else {
 					dp[i][0] = b;
 					dp[i][1] = b_idx;				
