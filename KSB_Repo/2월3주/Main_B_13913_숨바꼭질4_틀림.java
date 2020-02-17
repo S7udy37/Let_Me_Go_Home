@@ -1,3 +1,8 @@
+/**
+* 숨바꼭질1은 되는데 왜 이건 안될까..ㅠㅠ
+*
+*/
+
 package study_0215;
 
 import java.io.BufferedReader;
