@@ -1,3 +1,7 @@
+/*
+* 102876 kb
+* 312 ms 
+*/
 package S7udy;
 
 import java.io.BufferedReader;
@@ -51,8 +55,6 @@ public class Main_B2589_보물섬_김준원 {
 						list[cnt++][1] = j;
 					}
 				}
-				if (i == n - 1)
-					break;
 			}
 		}
 		int max = 0;
