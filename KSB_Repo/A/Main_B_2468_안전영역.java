@@ -1,13 +1,14 @@
 /**
-*
-* 53036	KB
-* 264 ms
+* BFS: 53036 KB, 264 ms
+* DFS: 54916 KB, 304 ms
+* 
 */
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 /*
@@ -73,7 +74,8 @@ public class Main_B_2468_안전영역 {
 			for(int i=1; i<N+1; i++) {
 				for(int j=1; j<N+1; j++) {
 					if(visited[i][j]) {
-						getSafeZone(i, j);						
+//						getSafeZone_bfs(i, j);		// using bfs
+						getSafeZone_dfs(i, j);		// using dfs
 					}
 				}
 			}
@@ -90,7 +92,30 @@ public class Main_B_2468_안전영역 {
 		
 	}
 
-	private static void getSafeZone(int row, int col) {
+	private static void getSafeZone_dfs(int row, int col) {
+		Stack<POINT> stack = new Stack<POINT>();
+		stack.push(new POINT(row, col));
+		
+		POINT p; int x, y;
+		while(!stack.isEmpty()) {
+			p = stack.pop();
+			visited[p.x][p.y]=false;
+			
+			for(int i=0; i<4; i++) {
+				x = p.x+dx[i];
+				y = p.y+dy[i];
+				
+				if(visited[x][y]) {
+					stack.push(new POINT(x, y));
+				}
+			}
+		}
+		
+		temp_zone++;
+		
+	}
+
+	private static void getSafeZone_bfs(int row, int col) {
 		LinkedList<POINT> queue = new LinkedList<POINT>();
 		queue.offer(new POINT(row, col));
 		visited[row][col]=false;
@@ -126,3 +151,4 @@ public class Main_B_2468_안전영역 {
 		}
 	}
 }
+
