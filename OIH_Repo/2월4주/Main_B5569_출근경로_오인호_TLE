@@ -1,0 +1,42 @@
+package com.acmicpc;
+import java.util.Scanner;
+
+public class Main_B5569_출근경로_오인호 {
+
+	static int X, Y;
+	static int ans = 0;
+	static boolean xFlag = false, yFlag = false;
+
+	public static void main(String[] args) {
+	  
+    Scanner sc = new Scanner(System.in);
+		X = sc.nextInt();
+		Y = sc.nextInt();
+		find(1,1,1,1);
+		System.out.println(ans);
+		sc.close();
+	}
+	private static void find(int nx, int ny, int px, int py) {
+
+		if(nx>X || ny >Y) return;
+		if(nx == X && ny == Y) ans++;
+		if( nx - px == 1) {
+			if(!xFlag && (nx == 2 && ny == 1)) {
+				xFlag = true;
+				find(nx,ny+1,nx,py);
+			}
+			find(nx+1,ny,px,ny);
+			return;
+		}
+		if( ny - py == 1) {
+			if(!yFlag && (nx == 1 && ny == 2)) {
+				yFlag = true;
+				find(nx+1,ny,px,ny);
+			}
+			find(nx,ny+1,nx,py);
+			return;
+		}
+		find(nx+1,ny,px,py);
+		find(nx,ny+1,px,py);
+	}
+}
