@@ -1,6 +1,5 @@
 // Memory : 14992KB
 // Time : 112ms
-// 아주 짜증나는 문제구나
 
 package com.acmicpc;
 import java.util.Scanner;
