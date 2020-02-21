@@ -25,20 +25,22 @@ public class Main_B5569_출근경로_오인호 {
 		
 		for(int i=2; i<=X; i++) {
 			for(int j=2; j<=Y; j++) {
-				// go : north , isn't turn 
-				// before => go : north, isn't turn + go : north, is turn
+				// 북쪽으로 가고 있는데 이번 단계에서 바향을 바꾸지 않았다. 
+				// 이전 단계에서 가능한 경우 1) 이전 단계에서도 북쪽으로 가고 있으며 방향을 바꾸지 않았다.
+				// 		       2) 이전단계에서 방향을 북쪽으로 바꿨다.
 				ans[i][j][0][0] = (ans[i-1][j][0][0] + ans[i-1][j][0][1]) % div;
 				
-				// go : north, is turn 
-				// before => go : east, isn't turn
+				// 북쪽으로 가고 있는데 이번 단계에서 방향을 바꿨다.
+				// 이전 단계에서 가능한 경우 1) 이전 단계에서 방향을 바꾸지 않았으며, 동쪽으로 가고있었다.
 				ans[i][j][0][1] = ans[i-1][j][1][0] % div;
 				
-				// go : east , isn't turn 
-				// before stage => go : east, isn't turn + go : east, is turn
+				// 동쪽으로 가고 있는데 이번 단계에서 방향을 바꾸지 않았다.
+				// 이번 단계에서 가능한 경우 1) 이전 단계에서도 동쪽으로 가고있고 방향을 바꾸지 않았다.
+				// 		       2) 이전 단계에서 동쪽으로 방향을 바꿨다.
 				ans[i][j][1][0] = (ans[i][j-1][1][0] + ans[i][j-1][1][1]) % div;
 				
-				// go : east, is turn
-				// before => go : north, isn't turn
+				// 동쪽으로 가고 있는데 이번 단계에서 방향을 바꾸지 않았다.
+				// 이전 단계에서 가능한 경우 1) 이전 단계에서 방향을 바꾸지 않았으며, 북쪽으로 가고있었다.
 				ans[i][j][1][1] = ans[i][j-1][0][0] % div;
 			}
 		}
