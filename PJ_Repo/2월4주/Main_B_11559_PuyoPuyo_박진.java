@@ -39,8 +39,8 @@ public class Main_B_11559_PuyoPuyo_박진 {
 		
 		// 알고리즘
 		do {
-			isSelected = new boolean[12][6];	// isSelected 초기화
-			isPosible = false;			// isPosible 초기화
+			isSelected = new boolean[12][6];	// isSelected 초기화 (gameBoard가 1연쇄마다 갱신되기 때문에)
+			isPosible = false;			// isPosible 초기화 (gameBoard가 1연쇄마다 갱신되기 때문에)
 			removePuyo();	// 뿌요 제거
 			
 			if (isPosible == true) {
@@ -70,7 +70,7 @@ public class Main_B_11559_PuyoPuyo_박진 {
 		}
 	}
 	
-	// 4개 이상의 뿌요들을 모두 터뜨리는 메소드
+	// 4개 이상의 뿌요 그룹들을 모두 터뜨리는 메소드
 	static private void removePuyo() {
 		for (int i = 0; i < 12; i++) {
 			for (int j = 0; j < 6; j++) {
