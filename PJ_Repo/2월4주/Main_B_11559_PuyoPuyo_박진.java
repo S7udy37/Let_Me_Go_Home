@@ -18,15 +18,16 @@ class Point {
 public class Main_B_11559_PuyoPuyo_박진 {
 
 	static char[][] gameBoard = new char[12][6];
-	static boolean[][] isSelected;
 	
-	static Queue<Point> queue = new LinkedList<Point>();
+	static boolean[][] isSelected;				// BFS를 위한 flag
+	static Queue<Point> queue = new LinkedList<Point>();	// BFS를 위한 큐
 	
+	// 상, 하, 좌, 우
 	static int[] di = { -1, 1, 0, 0 };
 	static int[] dj = { 0, 0, -1, 1 };
 	
-	static boolean isPosible = false;	// 터뜨릴 뿌요가 있는지 확인하는 flag
-	static int result = 0;
+	static boolean isPosible = false;	// 터뜨릴 뿌요가 있는지 확인하는 flag (있으면 true, 없으면 false)
+	static int result = 0;			// 결과값
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
