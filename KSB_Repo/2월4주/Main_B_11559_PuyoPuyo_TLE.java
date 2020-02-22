@@ -1,5 +1,5 @@
 /**
-* 18%에서 런타임 에러
+* 시간초과 머냐ㅠ
 * 
 */
 
@@ -72,6 +72,12 @@ public class Main_B_11559_PuyoPuyo {
 	}
 
 	private static void getDownPuyo() {
+		/*
+		 * map, visited 갈아엎기
+		 * 해당 column에서 visited가 false인 갯수 s_num[column]에 저장
+		 * column에서 뿌요 밑으로 내리기
+		 * 
+		 */
 		int sum;
 		for(int j=1; j<7; j++) {
 			sum=0;
@@ -82,29 +88,32 @@ public class Main_B_11559_PuyoPuyo {
 				s_num[j] = sum;				
 			}			
 		}
+		
+		for(int j=1; j<7; j++) {
+			for(int i=12; i>s_num[j]; i--) {
+				map[i][j] = map[i-s_num[j]][j];
+				visited[i][j] = true;	
+			}			
+		}
 	}
 
 	static Queue<Puyo> queue;
-	private static void findPuyo(int row, int col, char color) {
+	private static void findPuyo(int row, int col, char color) {	
 		// for initialization
 		for(int i=1; i<13; i++)
 			for(int j=1; j<7; j++)
 				temp_visited[i][j] = visited[i][j];
 				
 		queue = new LinkedList<Puyo>();
-		row += s_num[col];
-		queue.offer(new Puyo(row, col));
 		visited[row][col] = false;
-		int max=0, score=1;
+		queue.offer(new Puyo(row, col));
+		
+		int score=1;	// 터진 뿌요 갯수
 		
 		Puyo current;
 		while(!queue.isEmpty()) {
 			current = queue.poll();
 			
-			if(score>max) {
-				max = score;
-			}
-			 
 			int x, y;
 			for(int i=0; i<4; i++) {
 				x = current.x+dx[i];
@@ -118,7 +127,7 @@ public class Main_B_11559_PuyoPuyo {
 			}
 		}
 		
-		if(max>3) {
+		if(score>3) {
 			turn++;
 		}else {
 			// visited 원상태 복구
