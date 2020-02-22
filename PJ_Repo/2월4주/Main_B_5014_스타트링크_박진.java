@@ -1,5 +1,9 @@
 // Gold V - 5014 : 스타트링크
 
+/*
+48,964kb
+180ms
+*/
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
