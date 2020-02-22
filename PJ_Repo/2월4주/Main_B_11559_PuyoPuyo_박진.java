@@ -39,12 +39,12 @@ public class Main_B_11559_PuyoPuyo_박진 {
 		// 알고리즘
 		do {
 			isSelected = new boolean[12][6];	// isSelected 초기화
-			isPosible = false;					// isPosible 초기화
+			isPosible = false;			// isPosible 초기화
 			removePuyo();	// 뿌요 제거
 			
 			if (isPosible == true) {
 				result++;	// 연쇄(결과값) 증가
-				movePuyo(); // 뿌요 이동
+				movePuyo(); 	// 뿌요 이동
 			}
 		} while(isPosible == true);
 		
