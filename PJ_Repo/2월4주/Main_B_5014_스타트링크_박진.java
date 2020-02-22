@@ -22,7 +22,7 @@ public class Main_B_5014_스타트링크_박진 {
 	static int F, S, G, U, D;
 	static int result = Integer.MAX_VALUE;	// 강호가 S층에서 G층으로 가기 위해 눌러야 하는 버튼의 수의 최솟값
 	
-	static boolean[] isVisited;			// dfs를 위한 flag
+	static boolean[] isVisited;		// dfs를 위한 flag
 	static boolean isPosible = false;	// 엘리베이터로 이동가능하면 true, 불가능하면 false
 	
 	public static void main(String[] args) throws IOException {
@@ -59,10 +59,10 @@ public class Main_B_5014_스타트링크_박진 {
 		
 		isVisited[current] = true;
 		
-		if ( (current+U <= F) && (isVisited[current+U] == false) ) {
+		if ( (current+U <= F) && (isVisited[current+U] == false) ) {	// 위로 이동
 			dfs(current+U, count+1);
 		}
-		if ( (current-D > 0) && (isVisited[current-D] == false)) {
+		if ( (current-D > 0) && (isVisited[current-D] == false)) {	// 아래로 이동
 			dfs(current-D, count+1);
 		}
 	}
