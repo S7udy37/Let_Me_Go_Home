@@ -82,7 +82,7 @@ public class Main_B_17144_미세먼지안녕_박진_ING {
 //			for (int i = 0; i < R; i++) {
 //				System.out.println(Arrays.toString(afterA[i]));
 //			}
-			System.out.println("#######" + (turn+1) + "초 끝#######");
+//			System.out.println("#######" + (turn+1) + "초 끝#######");
 		}
 		
 		for (int i = 0; i < R; i++) {
