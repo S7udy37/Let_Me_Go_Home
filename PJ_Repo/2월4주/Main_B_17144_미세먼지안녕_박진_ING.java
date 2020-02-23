@@ -2,6 +2,7 @@
 
 /*
 16%에서 '틀렸습니다.'
+왜 틀린거냐고고곡고ㅗ고ㅗ고고고고고고곡ㄱ고고
  */
 
 import java.io.BufferedReader;
@@ -11,7 +12,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_B_17144_미세먼지안녕_박진 {
+public class Main_B_17144_미세먼지안녕_박진_ING {
 
 	static class Point {
 		int i, j;
