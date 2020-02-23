@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_B_5569_출근경로_박진_BFS2_MLE {
+public class Main_B_5569_출근경로_박진_BFS_2_MLE {
 
 	/* 주어진 힌트의 지도를 오른쪽으로 90도 돌려서 생각했음. */
 	static int w, h;
