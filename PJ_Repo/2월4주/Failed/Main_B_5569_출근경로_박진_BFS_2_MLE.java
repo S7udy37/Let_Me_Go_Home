@@ -1,5 +1,8 @@
-
 // Gold V - 5569 : 출근 경로
+
+/* 
+메모리 초과
+ */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
