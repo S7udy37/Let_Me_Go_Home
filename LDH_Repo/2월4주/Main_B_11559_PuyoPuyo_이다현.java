@@ -1,3 +1,7 @@
+/*
+메모리 : 12976kb
+시간 : 80ms
+*/
 package 알고리즘스터디_2월셋째주;
 
 import java.io.BufferedReader;
