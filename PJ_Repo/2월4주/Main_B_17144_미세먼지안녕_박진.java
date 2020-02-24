@@ -1,14 +1,19 @@
 // Gold V - 17144 : 미세먼지 안녕!
 
+/*
+18,224kb
+256ms
+*/
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main_B_17144_미세먼지안녕_박진 {
 	
-	static int R, C;			// 집의 크기 R×C
-	static int T;				// T초
-	static int[][] A;			// 미세먼지 초기 상태를 저장할 배열
+	static int R, C;		// 집의 크기 R×C
+	static int T;			// T초
+	static int[][] A;		// 미세먼지 초기 상태를 저장할 배열
 	static int[][] afterA;		// 미세먼지가 확산된 후의 상태를 저장할 배열
 	static int machineTop;		// 위쪽 공기청정기 위치
 	static int machineBottom;	// 아래쪽 공기청정기 위치
@@ -42,8 +47,8 @@ public class Main_B_17144_미세먼지안녕_박진 {
 		
 		/* 알고리즘 */
 		for (int turn = 0; turn < T; turn++) {
-			copyA();		// 미세먼지 상태 복사
-			spread();		// 미세먼지 확산
+			copyA();	// 미세먼지 상태 복사
+			spread();	// 미세먼지 확산
 			runMachine();	// 공기청정기 작동
 		}
 		
