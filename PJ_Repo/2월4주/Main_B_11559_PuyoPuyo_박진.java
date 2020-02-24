@@ -1,5 +1,10 @@
 // Gold V - 11559 : Puyo Puyo
 
+/*
+12,940kb
+80ms
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
