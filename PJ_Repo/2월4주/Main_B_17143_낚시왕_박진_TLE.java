@@ -1,7 +1,7 @@
 // Gold III - 17143 : 낚시왕
 
 /*
-시간 초과
+10%에서 시간 초과
 */
 
 import java.io.BufferedReader;
