@@ -116,40 +116,40 @@ public class Main_B_17143_낚시왕_박진 {
 			while (true) {
 				switch(arrList.get(i).d) {
 				case 1:	// 위쪽
-					if (arrList.get(i).r - speed > 0) {
+					if (arrList.get(i).r - speed > 0) {	// 이동 (이동완료)
 						arrList.get(i).r -= speed;
 						speed = 0;
-					} else {
+					} else {				// 이동 후 방향전환 (다시 while문 반복)
 						arrList.get(i).d = 2;
 						speed = speed - arrList.get(i).r + 1;
 						arrList.get(i).r = 1;
 					}
 					break;
 				case 2:	// 아래쪽
-					if (arrList.get(i).r + speed <= R) {
+					if (arrList.get(i).r + speed <= R) {	// 이동 (이동완료)
 						arrList.get(i).r += speed;
 						speed = 0;
-					} else {
+					} else {				// 이동 후 방향전환 (다시 while문 반복)
 						arrList.get(i).d = 1;
 						speed = arrList.get(i).r + speed - R;
 						arrList.get(i).r = R;
 					}
 					break;
 				case 3:	// 오른쪽
-					if (arrList.get(i).c + speed <= C) {
+					if (arrList.get(i).c + speed <= C) {	// 이동 (이동완료)
 						arrList.get(i).c += speed;
 						speed = 0;
-					} else {
+					} else {				// 이동 후 방향전환 (다시 while문 반복)
 						arrList.get(i).d = 4;
 						speed = arrList.get(i).c + speed - C;
 						arrList.get(i).c = C;
 					}
 					break;
 				case 4:	// 왼쪽
-					if (arrList.get(i).c - speed > 0) {
+					if (arrList.get(i).c - speed > 0) {	// 이동 (이동완료)
 						arrList.get(i).c -= speed;
 						speed = 0;
-					} else {
+					} else {				// 이동 후 방향전환 (다시 while문 반복)
 						arrList.get(i).d = 3;
 						speed = speed - arrList.get(i).c + 1;
 						arrList.get(i).c = 1;
@@ -159,7 +159,7 @@ public class Main_B_17143_낚시왕_박진 {
 					break;
 				}
 				
-				if (speed < 1)
+				if (speed < 1)	// 0이 되면 이동 종료
 					break;
 			}
 		}
