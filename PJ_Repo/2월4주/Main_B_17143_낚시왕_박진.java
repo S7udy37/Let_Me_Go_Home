@@ -31,6 +31,8 @@ public class Main_B_17143_낚시왕_박진 {
 			this.z = z;
 		}
 
+		// removeShark()을 할 때 for문의 반복수를 줄여서 시간초과를 해결하기 위해서,
+		// r(상어의 행위치), c(상어의 열위치), z(상어의 크기)를 기준으로 오름차순 정렬.
 		@Override
 		public int compareTo(Shark o) {
 			if (this.r == o.r) {
@@ -44,8 +46,8 @@ public class Main_B_17143_낚시왕_박진 {
 		}
 	}
 	
-	static int R, C;		// 격자판의 크기 R, C
-	static int M;			// 상어의 수
+	static int R, C;	// 격자판의 크기 R, C
+	static int M;		// 상어의 수
 	
 	static int result = 0;	// 낚시왕이 잡은 상어 크기의 합
 	
