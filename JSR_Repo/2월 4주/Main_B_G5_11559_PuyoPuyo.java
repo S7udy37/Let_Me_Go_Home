@@ -1,4 +1,3 @@
-package Baekjoon;
 /*
  * 12972KB
  * 76ms
