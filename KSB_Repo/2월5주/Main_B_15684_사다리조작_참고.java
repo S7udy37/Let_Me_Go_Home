@@ -19,7 +19,6 @@ public class Main_B_15684_사다리조작_참고 {
 	
 	static int N, M, H, ans, sum;
 	static boolean[][] visited;
-	static int[] ladder;
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -28,16 +27,13 @@ public class Main_B_15684_사다리조작_참고 {
 		M = Integer.parseInt(st.nextToken());	// 사다리 가로줄의 갯수
 		H = Integer.parseInt(st.nextToken());	// 사다리 높이
 		visited = new boolean[H][N+2];	// 사다리 있는지 확인(맨 왼쪽때문에 +1)
-		ladder = new int[N+1];	// 해당 줄에 몇개의 사다리 있는지 확인
 		
 		int a, b;	// a: 가로줄 위치, b: 시작 사다리 줄 번호
 		for(int i=0; i<M; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
 			a = Integer.parseInt(st.nextToken())-1;	// 1번부터 시작
-			b = Integer.parseInt(st.nextToken());	// 1번부터 시작
-			
+			b = Integer.parseInt(st.nextToken());
 			visited[a][b] = true;
-			ladder[b]++;
 		}
 		
 		ans=Integer.MAX_VALUE;
