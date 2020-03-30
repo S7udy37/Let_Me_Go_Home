@@ -1,6 +1,11 @@
 # Let_Me_Go_Home
 
-모두 건강하세요~
+2020-03-30 ~ 2020-04-05
+1. 14502(G5) 연구소 https://www.acmicpc.net/problem/14502
+2. 3980(G4) 선발 명단 https://www.acmicpc.net/problem/3980
+3. 1922(G4) 네트워크 연결 https://www.acmicpc.net/problem/1922
+4. 17070(G5) 파이프 옮기기1 https://www.acmicpc.net/problem/17070
+5. 2260(G4) 벽 부수고 이동하기 https://www.acmicpc.net/problem/2206
 
 2020-02-25 ~ 2020-03-02
 1. 15683(G5) 감시 https://www.acmicpc.net/problem/15683
