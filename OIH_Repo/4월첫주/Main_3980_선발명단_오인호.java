@@ -1,3 +1,10 @@
+/**
+* Memory : 14544KB
+* Time : 120ms
+*/
+
+
+
 package com.acmicpc;
 
 import java.io.BufferedReader;
