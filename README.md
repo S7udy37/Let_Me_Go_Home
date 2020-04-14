@@ -1,5 +1,12 @@
 # Let_Me_Go_Home
 
+2020-04-13 ~ 2020-04-20
+1. 17472(G3) 다리만들기 https://www.acmicpc.net/problem/17472
+2. 5427(G4) 불 https://www.acmicpc.net/problem/5427
+3. 2636(G5) 치즈 https://www.acmicpc.net/problem/2636
+4. 1062(G4) 가르침 https://www.acmicpc.net/problem/1062
+5. 14503(G5) 로봇 청소기 https://www.acmicpc.net/problem/14503
+
 2020-03-30 ~ 2020-04-05
 1. 14502(G5) 연구소 https://www.acmicpc.net/problem/14502
 2. 3980(G4) 선발 명단 https://www.acmicpc.net/problem/3980
