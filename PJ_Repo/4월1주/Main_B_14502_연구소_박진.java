@@ -1,14 +1,14 @@
 // Gold V - 14502 : 연구소
 
 /*
-155,920 kb
-432 ms
+122,040 kb
+436 ms
 */
 
 import java.util.*;
 import java.io.*;
 
-public class Main_B_14502_연구소_박진 {
+public class Main_B_14502_연구소_박진_수정 {
 
 	static class Point {
 		int r, c;
@@ -74,38 +74,38 @@ public class Main_B_14502_연구소_박진 {
 		}
 	}
 	
-	public static void combination(int row, int cnt) {
+	public static void combination(int index, int cnt) {
 		if (cnt == 3) {
-			for (int i = 0; i < N; i++) {
+			for (int i = 0; i < N; i++) {	// copy map
 				for (int j = 0; j < M; j++) {
 					map2[i][j] = map[i][j];
 				}
 			}
 			
-			int size = virus.size();
-			for (int i = 0; i < size; i++) {
-				bfs(virus.get(i));
+			for (Point point : virus) {
+				bfs(point);
 			}
 			
-			int temp = cntZero();
+			int temp = countZero();
 			if (result < temp) {
 				result = temp;
 			}
 			return;
 		}
 		
-		for (int i = row; i < N; i++) {
-			for (int j = 0; j < M; j++) {
-				if (map[i][j] == 0) {
-					map[i][j] = 1;
-					combination(i, cnt+1);
-					map[i][j] = 0;
-				}
+		for (int i = index; i < N * M; i++) {
+			int row = i / M;
+			int col = i % M;
+			
+			if (map[row][col] == 0) {
+				map[row][col] = 1;
+				combination(i + 1, cnt + 1);
+				map[row][col] = 0;
 			}
 		}
 	}
 	
-	public static int cntZero() {
+	public static int countZero() {
 		int cnt = 0;
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < M; j++) {
