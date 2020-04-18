@@ -1,5 +1,10 @@
 // Gold IV - 5427 : 불
 
+/*
+ * BFS
+ * 117,028 kb, 852 ms
+ */
+
 import java.util.*;
 import java.io.*;
 
