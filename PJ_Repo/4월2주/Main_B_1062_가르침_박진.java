@@ -12,7 +12,6 @@ public class Main_B_1062_가르침_박진 {
 
 	static int N, K;
 	static String[] str;
-	static boolean[] select = new boolean[26];
 	static Set<Integer> set = new HashSet<Integer>();
 	static int result = 0;
 	
@@ -35,11 +34,6 @@ public class Main_B_1062_가르침_박진 {
 		}
 		
 		// "anta"와 "tica"를 읽는데 필요한 문자 a,c,i,n,t는 무조건 배워야함.
-		select['a'-'a'] = true;
-		select['c'-'a'] = true;
-		select['i'-'a'] = true;
-		select['n'-'a'] = true;
-		select['t'-'a'] = true;
 		set.add('a'-'a');
 		set.add('c'-'a');
 		set.add('i'-'a');
@@ -79,12 +73,10 @@ public class Main_B_1062_가르침_박진 {
 		}
 		
 		for (int i = index; i < 26; i++) {
-			if (select[i])
+			if (set.contains(i))
 				continue;
-			select[i] = true;
 			set.add(i);
-			combination(i, cnt + 1);
-			select[i] = false;
+			combination(i + 1, cnt + 1);
 			set.remove(i);
 		}
 	}
