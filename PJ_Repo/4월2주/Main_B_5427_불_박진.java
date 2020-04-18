@@ -64,7 +64,6 @@ public class Main_B_5427_불_박진 {
 				}
 			}// end of input
 			
-			
 		L:	while(!sg.isEmpty()) {
 				fire();	// 불 번짐
 				int size = sg.size();
