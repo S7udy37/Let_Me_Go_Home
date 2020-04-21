@@ -1,6 +1,13 @@
 # Let_Me_Go_Home
 
-2020-04-13 ~ 2020-04-20
+2020-04-21 ~ 2020-04-27
+1. 15686(G5) 치킨 배달 https://www.acmicpc.net/problem/15686
+2. 14891(S1) 톱니바퀴  https://www.acmicpc.net/problem/14891
+3. 17140(G4) 이차원 배열과 연산 https://www.acmicpc.net/problem/17140
+4. 3190(G5) 뱀 https://www.acmicpc.net/problem/3190
+5. 5557(G5) 1학년 https://www.acmicpc.net/problem/5557
+
+2020-04-14 ~ 2020-04-20
 1. 17472(G3) 다리만들기 https://www.acmicpc.net/problem/17472
 2. 5427(G4) 불 https://www.acmicpc.net/problem/5427
 3. 2636(G5) 치즈 https://www.acmicpc.net/problem/2636
