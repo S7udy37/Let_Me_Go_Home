@@ -1,7 +1,7 @@
 // Gold III - 17472 : 다리 만들기 2
 
 /*
- * BFS & Kruskal (Union-Find)
+ * BFS & MST : Kruskal (Union-Find)
  * 13,148 kb, 76 ms
  */
 
