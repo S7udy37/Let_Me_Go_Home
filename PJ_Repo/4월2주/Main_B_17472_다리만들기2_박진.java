@@ -140,6 +140,7 @@ public class Main_B_17472_다리만들기2_박진 {
 //			System.out.println(pq.poll());
 //		}
 		
+		// MST : Kruskal
 		makeSet();
 		while(!pq.isEmpty()) {
 			Edge edge = pq.poll();
