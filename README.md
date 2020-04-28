@@ -1,5 +1,12 @@
 # Let_Me_Go_Home
 
+2020-04-28 ~ 2020-05-04
+1. 16235(G5) 나무 재테크 https://www.acmicpc.net/problem/16235
+2. 1600(G5) 말이 되고픈 원숭이 https://www.acmicpc.net/problem/1600
+3. 3055(G5) 탈출 https://www.acmicpc.net/problem/3055
+4. 1227(D5) 미로2 https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14wL9KAGkCFAYD&categoryId=AV14wL9KAGkCFAYD&categoryType=CODE
+5. 3752(D4) 가능한 시험 점수 https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWHPkqBqAEsDFAUn&categoryId=AWHPkqBqAEsDFAUn&categoryType=CODE
+
 2020-04-21 ~ 2020-04-27
 1. 15686(G5) 치킨 배달 https://www.acmicpc.net/problem/15686
 2. 14891(S1) 톱니바퀴  https://www.acmicpc.net/problem/14891
