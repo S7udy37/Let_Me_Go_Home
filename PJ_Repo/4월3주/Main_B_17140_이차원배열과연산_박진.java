@@ -24,11 +24,6 @@ public class Main_B_17140_이차원배열과연산_박진 {
 				return Integer.compare(this.num, o.num);
 			return Integer.compare(this.cnt, o.cnt);
 		}
-
-		@Override
-		public String toString() {
-			return "Check [num=" + num + ", cnt=" + cnt + "]";
-		}
 	}
 	
 	static int r, c, k;
