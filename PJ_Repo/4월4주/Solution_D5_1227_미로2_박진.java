@@ -1,4 +1,4 @@
-// D5 - 1227 : [S/W 문제해결 기본] 7일차 - 미로2
+// D4 - 1227 : [S/W 문제해결 기본] 7일차 - 미로2
 
 /*
  * BFS
@@ -8,7 +8,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Solution_D5_1227_미로2_박진 {
+public class Solution_D4_1227_미로2_박진 {
 
 	static class Point {
 		int i, j;
