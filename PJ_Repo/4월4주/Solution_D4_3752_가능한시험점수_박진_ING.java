@@ -3,7 +3,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Solution_D4_3752_가능한시험점수_박진 {
+public class Solution_D4_3752_가능한시험점수_박진_ING {
 
 	static int T;
 	static int N;	// 문제의 개수 (1 ≤ N ≤ 100)
