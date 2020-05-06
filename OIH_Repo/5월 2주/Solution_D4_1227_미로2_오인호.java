@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Solution_D5_1227_미로2_오인호 {
+public class Solution_D4_1227_미로2_오인호 {
 	static int[][] map;
 	static boolean[][] check;
 	static int dx[] = { 1, -1, 0, 0};
