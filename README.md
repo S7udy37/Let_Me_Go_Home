@@ -1,11 +1,11 @@
 # Let_Me_Go_Home
 
 2020-05-05 ~ 2020-05-11
-1.144999(G5) 주사위 굴리기 https://www.acmicpc.net/problem/14499
-2.1389(S1) 케빈 베이컨의 6단계 법칙 https://www.acmicpc.net/problem/1389
-3.9372(S3) 상근이의 여행 https://www.acmicpc.net/problem/9372
-4.1726(G4) 로봇 https://www.acmicpc.net/problem/1726
-5.15997(G3) 승부 예측 https://www.acmicpc.net/problem/15997
+1. 144999(G5) 주사위 굴리기 https://www.acmicpc.net/problem/14499
+2. 1389(S1) 케빈 베이컨의 6단계 법칙 https://www.acmicpc.net/problem/1389
+3. 9372(S3) 상근이의 여행 https://www.acmicpc.net/problem/9372
+4. 1726(G4) 로봇 https://www.acmicpc.net/problem/1726
+5. 15997(G3) 승부 예측 https://www.acmicpc.net/problem/15997
 
 2020-04-28 ~ 2020-05-04
 1. 16235(G5) 나무 재테크 https://www.acmicpc.net/problem/16235
