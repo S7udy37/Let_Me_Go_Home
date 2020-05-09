@@ -8,7 +8,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main_B_14891_톱니바퀴_박진_ING {
+public class Main_B_14891_톱니바퀴_박진 {
 	static char[][] T;	// 4개의 톱니바퀴 (12시방향부터 시계방향 순서 (3시 방향 인덱스 = 2, 9시 방향 인덱스 = 6)) (N극은 0, S극은 1)
 	static int K;	// 회전 횟수
 	static int[][] INFO;	// INFO[i][0] : 톱니 번호, INFO[i][1] : 회전 방향 (방향이 1인 경우는 시계 방향이고, -1인 경우는 반시계 방향)
