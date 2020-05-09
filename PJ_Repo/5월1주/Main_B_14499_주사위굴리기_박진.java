@@ -85,7 +85,7 @@ public class Main_B_14499_주사위굴리기_박진 {
 				dice[5] = dice[1];
 				dice[1] = dice[2];
 				dice[2] = dice[6];
-				dice[6] =temp;
+				dice[6] = temp;
 				break;
 			}
 			bottom = dice[6];
@@ -98,6 +98,7 @@ public class Main_B_14499_주사위굴리기_박진 {
 				map[nexti][nextj] = 0;
 			}
 			
+			// 윗 면에 쓰여 있는 수
 			sb.append(dice[1]).append("\n");
 		}
 		
