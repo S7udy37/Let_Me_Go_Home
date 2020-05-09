@@ -8,7 +8,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_B_1600_말이되고픈원숭이_BFS {
+public class Main_B_1600_말이되고픈원숭이 {
 
 	static class Point {
 		int i, j;
@@ -19,10 +19,6 @@ public class Main_B_1600_말이되고픈원숭이_BFS {
 			this.j = j;
 			this.cnt = cnt;
 			this.remain = remain;
-		}
-		@Override
-		public String toString() {
-			return "Point [i=" + i + ", j=" + j + ", cnt=" + cnt + ", remain=" + remain + "]";
 		}
 	}
 	
