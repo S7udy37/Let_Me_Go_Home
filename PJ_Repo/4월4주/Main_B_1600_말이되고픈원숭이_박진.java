@@ -8,7 +8,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main_B_1600_말이되고픈원숭이 {
+public class Main_B_1600_말이되고픈원숭이_박진 {
 
 	static class Point {
 		int i, j;
