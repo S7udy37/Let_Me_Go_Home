@@ -1,13 +1,14 @@
 // Gold IV - 1726 : 로봇
 
 /*
- * 틀렸습니다. --> 다시 해보기
+ * BFS
+ * 14,064 kb, 92 ms
  */
 
 import java.io.*;
 import java.util.*;
 
-public class Main_B_1726_로봇_박진_ING {
+public class Main_B_1726_로봇_박진 {
 	
 	static class Point {
 		int i, j;
@@ -75,39 +76,37 @@ public class Main_B_1726_로봇_박진_ING {
 		while(!q.isEmpty()) {
 			Point cur = q.poll();
 			
-			if (cur.i == endR && cur.j == endC) {
-				int temp;
-				if (cur.dir == endD) {
-					temp = cur.cnt;
-				} else {
-					temp = cur.cnt + 1;
-					if ((cur.dir == 1 && endD == 2) || (cur.dir == 2 && endD == 1) || (cur.dir == 3 && endD == 4) || (cur.dir == 4 && endD == 3)) {	// 180도 회전일 경우
-						temp = cur.cnt + 2;
-					}
-				}
-				result = result > temp ? temp : result;
+			if (cur.i == endR && cur.j == endC && cur.dir == endD) {
+				result = cur.cnt;
+				return;
 			}
 			
+			// 같은 방향에서 이동할 수 있는 곳으로 이동
+			for (int l = 1; l <= 3; l++) {
+				int nexti = cur.i + di[cur.dir] * l;
+				int nextj = cur.j + dj[cur.dir] * l;
+				if (nexti < 1 || nextj < 1 || nexti > M || nextj > N)	// 범위 체크
+					break;
+				if (visit[nexti][nextj][cur.dir])	// 방문 체크
+					continue;
+				if (map[nexti][nextj] == 1)	// 궤도 체크
+					break;
+				
+				visit[nexti][nextj][cur.dir] = true;
+				q.offer(new Point(nexti, nextj, cur.cnt + 1, cur.dir));
+			}
+			
+			// 회전
 			for (int d = 1; d <= 4; d++) {
-				int nextCnt = cur.cnt + 1;
-				if(cur.dir != d) {	// 방향이 다르면 방향회전에 필요한 횟수만큼 늘려줌.
-					nextCnt += 1;	// 90도 회전일 경우
-					if ((cur.dir == 1 && d == 2) || (cur.dir == 2 && d == 1) || (cur.dir == 3 && d == 4) || (cur.dir == 4 && d == 3)) {	// 180도 회전일 경우
-						nextCnt += 1;
-					}
-				}
-				for (int l = 1; l <= 3; l++) {
-					int nexti = cur.i + di[d] * l;
-					int nextj = cur.j + dj[d] * l;
-					if (nexti < 1 || nextj < 1 || nexti > M || nextj > N)	// 범위 체크
-						break;
-					if (visit[nexti][nextj][d])	// 방문 체크
-						continue;
-					if (map[nexti][nextj] == 1)	// 궤도 체크
-						break;
-					visit[nexti][nextj][d] = true;
-					q.offer(new Point(nexti, nextj, nextCnt, d));
-				}
+				if (cur.dir == d)	// 같은 방향은 스킵
+					continue;
+				if (visit[cur.i][cur.j][d])	// 방문 체크
+					continue;
+				visit[cur.i][cur.j][d] = true;
+				int temp = 1;	// 90도 회전일 경우
+				if ((cur.dir == 1 && d == 2) || (cur.dir == 2 && d == 1) || (cur.dir == 3 && d == 4) || (cur.dir == 4 && d == 3))	// 180도 회전일 경우
+					temp = 2;
+				q.offer(new Point(cur.i, cur.j, cur.cnt + temp, d));
 			}
 		}
 	}
