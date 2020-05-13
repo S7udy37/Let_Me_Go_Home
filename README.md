@@ -1,5 +1,12 @@
 # Let_Me_Go_Home
 
+2020-05-12 ~ 2020-05-18
+1. 14890(G3) 경사로 https://www.acmicpc.net/problem/14890
+2. 14500(G5) 테트로미노 https://www.acmicpc.net/problem/14500
+3. 1347(S4) 미로 만들기 https://www.acmicpc.net/problem/1347
+4. 9251(G5) LCS https://www.acmicpc.net/problem/9251
+5. 2240(S1) 자두나무 https://www.acmicpc.net/problem/2240
+
 2020-05-05 ~ 2020-05-11
 1. 144999(G5) 주사위 굴리기 https://www.acmicpc.net/problem/14499
 2. 1389(S1) 케빈 베이컨의 6단계 법칙 https://www.acmicpc.net/problem/1389
