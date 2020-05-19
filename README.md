@@ -1,5 +1,12 @@
 # Let_Me_Go_Home
 
+2020-05-19 ~ 2020-05-25
+1. 2786(G5) 상근이의 레스토랑 https://www.acmicpc.net/problem/2786
+2. 1339(G4) 단어 수학 https://www.acmicpc.net/problem/1339
+3. 1012(S1) 유기농 배추 https://www.acmicpc.net/problem/1012
+4. 1018(S1) 체스판 다시 칠하기 https://www.acmicpc.net/problem/1018
+5. 1915(G5) 가장 큰 정사각형 https://www.acmicpc.net/problem/1915
+
 2020-05-12 ~ 2020-05-18
 1. 14890(G3) 경사로 https://www.acmicpc.net/problem/14890
 2. 14500(G5) 테트로미노 https://www.acmicpc.net/problem/14500
