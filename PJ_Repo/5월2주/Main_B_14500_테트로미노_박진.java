@@ -7,7 +7,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main_B_14500_테트로미노_박진_수정 {
+public class Main_B_14500_테트로미노_박진 {
 
 	static int N, M;	// 종이의 세로 크기 N과 가로 크기 M  (4 ≤ N, M ≤ 500)
 	static int map[][];	// 종이
