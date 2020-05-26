@@ -1,4 +1,10 @@
 # Let_Me_Go_Home
+2020-05-26 ~ 2020-06-01
+1. 1238(G3) 파티 https://www.acmicpc.net/problem/1238
+2. 1507(G3) 궁금한민호 https://www.acmicpc.net/problem/1507
+3. 1043(G5) 거짓말 https://www.acmicpc.net/problem/1043
+4. 9466(G5) 텀프로젝트 https://www.acmicpc.net/problem/9466
+5. 11657(G4) 타임머신 https://www.acmicpc.net/problem/11657
 
 2020-05-19 ~ 2020-05-25
 1. 2786(G5) 상근이의 레스토랑 https://www.acmicpc.net/problem/2786
