@@ -1,4 +1,12 @@
 # Let_Me_Go_Home
+* 2학기전까지는 감을 유지할 수 있는 수준의 문제만 풀어요
+
+2020-06-09 ~ 2020-06-16
+1. 1010(S5) 다리 놓기 https://www.acmicpc.net/problem/1010
+2. 12761(S3) 돌다리 https://www.acmicpc.net/problem/12761
+3. 6603(S2) 로또 https://www.acmicpc.net/problem/6603
+4. 2210(S2) 숫자판점프 https://www.acmicpc.net/problem/2210
+
 2020-05-26 ~ 2020-06-01
 1. 1238(G3) 파티 https://www.acmicpc.net/problem/1238
 2. 1507(G3) 궁금한민호 https://www.acmicpc.net/problem/1507
