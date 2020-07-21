@@ -1,5 +1,10 @@
 # Let_Me_Go_Home
-* 2학기전까지는 감을 유지할 수 있는 수준의 문제만 풀어요
+
+2020-07-21 ~ 2020-07-27
+1. 3025(G1) 돌 https://www.acmicpc.net/problem/3025
+2. 1261(G4) 알고스팟 https://www.acmicpc.net/problem/1261
+3. 2573(G4) 빙산 https://www.acmicpc.net/problem/2573
+4. 8972(G4) 미친아두이노 https://www.acmicpc.net/problem/8972
 
 2020-06-09 ~ 2020-06-16
 1. 1010(S5) 다리 놓기 https://www.acmicpc.net/problem/1010
